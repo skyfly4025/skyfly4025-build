@@ -9,7 +9,7 @@
 
 git clone https://github.com/kiddin9/openwrt-bypass package/luci-app-bypass
 git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-git clone https://https://github.com/kenzok8/small package/small
+git clone https://github.com/kenzok8/small package/small
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.10.10.1'                                    # IPv4 地址(openwrt后台地址)
