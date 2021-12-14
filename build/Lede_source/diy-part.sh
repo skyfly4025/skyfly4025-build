@@ -8,7 +8,6 @@
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
 echo 'src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.10.10.1'                                    # IPv4 地址(openwrt后台地址)
