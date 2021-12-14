@@ -7,9 +7,9 @@
 # 如果你的OP是当主路由的话，网关、DNS、广播都不需要，代码前面加 # 注释掉，只保留后台地址和子网掩码就可以
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
-git clone https://github.com/kiddin9/openwrt-bypass package/luci-app-bypass
-git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-git clone https://github.com/kenzok8/small package/small
+svn co https://github.com/kiddin9/openwrt-bypass/tree/main/luci-app-bypass package/luci-app-bypass
+svn co https://github.com/kiddin9/openwrt-bypass/tree/main/lua-maxminddb package/lua-maxminddb
+svn co https://github.com/kenzok8/small/tree/master/kcptun package/kcptun
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.10.10.1'                                    # IPv4 地址(openwrt后台地址)
