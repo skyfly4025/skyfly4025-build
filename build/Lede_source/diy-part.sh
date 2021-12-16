@@ -8,6 +8,7 @@
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
 git clone https://github.com/kiddin9/openwrt-bypass package/luci-app-bypass
+git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.10.10.1'                                    # IPv4 地址(openwrt后台地址)
