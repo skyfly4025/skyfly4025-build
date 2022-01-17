@@ -9,6 +9,8 @@
 
 echo 'src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.default
 
+echo 'src-git chinadns-ng https://github.com/pexcn/openwrt-chinadns-ng' >>feeds.conf.default
+
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.0.0.1'                                    # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                                 # IPv4 子网掩码
